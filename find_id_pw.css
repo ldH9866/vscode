@@ -1,0 +1,95 @@
+
+    *{
+        list-style:none;
+         text-decoration:none;
+         border-radius: 10px;
+         margin:0px;
+         padding:0px;
+         color:rgb(0, 0, 0);
+         font-size: 12px;
+         /* line-height: 25px; */
+
+    } 
+    
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+}
+
+    .find{
+        display:flex;
+        width:900px;
+        height:450px;
+        background-color: #ffffff;
+        margin:auto;
+        margin-top:80px;
+        border-radius: 10px;
+    }
+
+    .find > li{
+        flex:1;
+        background:#efefefb7;
+        margin-top:20px;
+        height:410px;
+        text-align: center;
+        padding: 20px 0 0 0px;
+        font-size: 16px;
+
+    }
+
+    .find>li:not(:last-child){
+        margin-right:20px;
+        background-color:#efefef83;
+    }
+
+    
+.find-id-pw{
+    font-size: 16px;
+    padding:50px 50px 50px 70px;
+    width:300px;
+    height: 200px;
+    text-align:left;
+
+}
+
+.find-id-pw input{
+    width: 100%;
+    padding:5px 5px 5px 10px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 12px; color: rgb(0, 0, 0);
+
+    /* outline:none; */
+
+}
+    .btn-send{
+        
+        float: right;
+        margin: 15px 0 0 10px;
+        width: 80px; height: 25px;
+        padding: 5px 0px 5px 0px;
+        background-color:#aaaaaaa2;        
+        border: 1px rgb(107, 107, 107);
+        border-radius: 10px;
+        font-size: 5px;
+
+}
+    .btn-area button{
+   
+        width: 100px; height: 25px;
+        padding: 5px 5px 5px 5px;
+        background-color:#95C6F0;
+        border: 1px black;
+        border-radius: 10px;
+        font-size: 8px;
+    }
+
+    .phonenum{
+        width: 155px;
+        display:inline-block;
+    }

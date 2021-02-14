@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="loginstyle.css">
+        <title>smmu_ssign_up</title>
+    </head>
+
+        <body>
+           <section class="login-form">
+
+                <h1>SMMU</h1>  
+
+                <form action="">
+
+                    <div class="make-id">                       
+                         <label for='name'>아이디</label><br>
+                        <input id='name' name='name' type='text' 
+                          placeholder='아이디를 입력하세요' autocomplete="off" required><br>
+                    </div>
+
+                    <div class="make-id">
+                         <label for='password'>비밀번호</label><br>
+                         <input id='password' name='password' 
+                        type='password'placeholder='비밀번호를 입력하세요' autocomplete="off" required><br>
+                     </div>
+
+                     <div class="make-id">
+                          <label for='password-check'>비밀번호 확인</label><br>
+                          <input id='password-check' name='password-check' 
+                             type='password'placeholder='비밀번호를 입력하세요'><br>
+                     </div>
+
+                     <div class="make-id">
+                             <label for='nickname'>닉네임</label><br>
+                             <input id='nickname' name='nickname' 
+                             type='text'placeholder='닉네임를 입력하세요'><br>
+                      </div>
+
+                      <div class="make-id">
+                          <label for='email'>이메일</label><br>
+                          <input id='email' name='email' type='email'
+                             placeholder='이메일을 입력하세요'><br>
+                         </div>
+
+                        <div class="make-id">
+                             <label for='phone'>휴대전화</label><br>
+                             <input id='phone' name='phone' type='tel'
+                             placeholder='전화번호를 입력하세요'><br>
+                        </div>
+
+                         <div class="make-id">
+                             <label for="select-student">학생 구분</label><br>
+<!-- onchange="window.open(value,'_blank');" -->
+                             <select name="select-student" id="select-student-identity"  data-native-menu="false" >
+                                <option > </option>
+                                <option value="student"  onchange="window.open(value,'_blank');" >재학생</option> 
+                                <option value="freshman"><a href=#demo-freshman>신입생</a></option>
+                             </select>
+                         </div>  
+                         
+                         <!-- <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">실험아ㅓㅏㄹ</a> -->
+
+                         <!-- <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all"> 
+
+                            <label for='name' class="ui-hidden-accessible">아이디</label><br>
+                            <input id='name' name='name' type='text' value="" data-theme="a"
+                             placeholder='아이디를 입력하세요' autocomplete="off" required><br>
+                       
+                            <label for='password' class="ui-hidden-accessible">비밀번호</label><br>
+                            <input id='password' name='password' value="" data-theme="a"
+                           type='password'placeholder='비밀번호를 입력하세요' autocomplete="off" required><br>
+
+                           <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">sign in</button>
+                        </div>
+                    -->
+
+                        <div class="btn-area">
+                             <button type="submit">가입하기</button>
+                       </div> 
+             </form>  
+            </section>
+
+            <script>
+                // $(function(){
+                //     $( "#popup-outside-page").enhanceWithin().popup();
+                // });
+
+        //                 $(document).ready(function() {
+        //     // this function is triggered as soon as something changes in the form
+        //     $("select[name='select-student']").change(function() {
+        //         //console.log('found change');
+        //         selectDialog('Pan','You had selected, Text: '+ $(':selected',this).text()+' And Value : '+$(this).val());
+        //     });
+            
+        //     function selectDialog(title, text) {    
+        //             return $('<div></div>').append(text)
+        //             .dialog({
+        //                 resizable: true,
+        //                 modal: true,
+        //                 buttons: {
+        //                     "OK": function() {
+        //                         $(this).dialog("close");
+        //                     }
+        //                 }
+        //             });
+        //         }
+        // });
+
+                $(document).ready<function(){
+                    $(':input#select-student-identity').live('change',function(){
+                        var sel_opt=$(this).val();
+                        alert(sel_opt);
+                        if(sel_opt==student){
+                            alert("succeseful");
+                        }
+                        else if(sel_opt==freshman){
+
+                        }
+                    })
+                }
+            </script>
+
+        </body>
+
+</html>   
